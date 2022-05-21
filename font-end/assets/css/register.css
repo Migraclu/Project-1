@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color-black: #000;
+    --text-color-orange: #F37124;
+    --text-color-white: #fff;
+    --text-color-gray: #808080;
+
+    --background-black: var(--text-color-black);
+    --background-orange: var(--text-color-orange);
+    --background-orange-a: rgba(243, 113, 36,.5);
+    --background-white: #fff;
+    --background-aquar:#7fffd4;
+    --background-red: #ff0000;
+    --background-gray: #808080;
+
+    --sans-serif: Arial, Helvetica, sans-serif;
+
+    --height-header: 100px;
+    --height-footer: 100px;
+
+}
+
+html{
+    font-size: 62.5%;   
+    line-height: 1.6rem;
+    font-family: var(--sans-serif);
+}
+
+/* footer-------------------------------------------- */
+.footer{
+    height: var(--height-footer);
+    color: var(--text-color-white);
+    background-color: var(--background-orange);
+    text-align: right;
+}
+
+
+.footer__content{
+    font-size: 2rem;
+    position: relative;
+    top: calc(var(--height-footer) - 40px );
+    padding-right: 20px;
+}
+
+/* footer--------------------END------------------------ */
+
+/* header------------------------------------------ */
+.header{
+    height: var(--height-header);
+    background-color: var(--background-black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    
+}
+
+.header__logo{
+    padding: 5px 20px;
+}
+
+.logo{
+    height: 80px;
+}
+/* header---------------END--------------------------- */
+
+/* General--------------------------------------------- */
+.primary-btn{
+    color: var(--text-color-white);
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: var(--background-orange);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 30px;
+    min-width: 100px;
+    padding: 10px 30px;
+    margin: 10px;
+    margin: auto 30px;
+    border:none;
+}
+.primary-btn:hover{
+    color:var(--background-orange);
+    background-color: var(--text-color-white);
+    border: 1px solid;
+}
+
+.container-fluid, .row{
+    padding: 0px;
+    margin: 0px;
+}
+/* General------------------END--------------------------- */
+
+
+
+/* main------------------------------------------------  */
+.main{
+    position: relative;
+    top: var(--height-header);
+    height: 100vh;
+}
+
+
+
+.container{
+    padding-top: 50px;
+}
+
+.container-left{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-left--img{
+    width: 100%;
+
+}
+
+.container-right{
+    margin-top: auto ;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.header-right{
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.header-right--step{
+    font-size: 2rem;
+    margin: 30px;
+}
+
+.right-form{
+    margin: 50px;
+}
+
+.right-form__input{
+    padding: 10px 0 10px 0;
+    width: 95%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid var(--text-color-orange);
+    font-size: 1.8rem;
+    outline: none;
+}
+
+.right-form__input:hover{
+    border-bottom: 5px solid var(--text-color-orange);
+    padding-bottom: 6px;
+}
+
+.right-form__btn{
+    text-align: right;
+}
+
+.verify-email{
+    position: absolute;
+    right: 90px;
+    top: 220px;
+}
+
+.right-form__btn{
+    position: absolute;
+    right: 90px;
+}
+.end-form-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-btn{
+    background-color: gray;
+}
+
+.back-btn:hover{
+    color: gray;
+    background-color: white;
+    border: 1px solid;
+}
+
+input[type=file]{
+    display: none;
+}
+
+.input-file{
+    display: inline-block;
+}
+
+.right-file-input{
+    font-size: 1.8rem;
+    margin: 10px 0 30px 0;
+}
+
+.input-file::before{
+    content: "Choose file";
+    border: 1px solid var(--background-orange);
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.righ-form-textarea{
+    width: 95%;
+    height: 130px;
+    resize: none;
+}
+
+.right-form__input option:nth-child(1){
+    background-color: gray;
+}
+
+select{
+    width: 600px;
+}
+
+/* main-----------------------END-------------------------  */
